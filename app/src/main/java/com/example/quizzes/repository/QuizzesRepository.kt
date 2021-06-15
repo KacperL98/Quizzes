@@ -6,8 +6,8 @@ import javax.inject.Inject
 
 class QuizzesRepository @Inject constructor(
     private val quizzesService: QuizzesService
-) : BaseDataSource() {
+)  {
 
-    suspend fun getAllQuizzes() = getResult { quizzesService.getAllQuizzes() }
-    suspend fun getDetailsQuiz(id_quizu: Long) = getResult { quizzesService.getDetailsQuiz(id_quizu) }
+    suspend fun getAllQuizzes() =  quizzesService.getAllQuizzes()
+    suspend fun getDetailsQuiz(id_quizu: Long) =   quizzesService.getDetailsQuiz(id_quizu)
 }

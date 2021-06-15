@@ -6,22 +6,16 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
-import android.widget.Toast
 import androidx.core.os.bundleOf
 import androidx.fragment.app.viewModels
 import androidx.lifecycle.Observer
-import androidx.navigation.Navigation
 import androidx.navigation.fragment.findNavController
 import com.example.quizzes.R
-import com.example.quizzes.basic.Const
 import com.example.quizzes.basic.Const.Companion.RESULT_COMIC2
-import com.example.quizzes.database.Resource
 import com.example.quizzes.databinding.FragmentDetailsBinding
 import com.example.quizzes.model3.Answer
 import com.example.quizzes.model3.Question
-import com.example.quizzes.model3.Root
 import com.example.quizzes.viewmodel.QuizDetailsViewModel
-import com.example.quizzes.viewmodel.QuizzesViewModel
 import dagger.hilt.android.AndroidEntryPoint
 import timber.log.Timber
 
@@ -47,32 +41,15 @@ class DetailsFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         initView()
-        setupObservers()
-        arguments?.getLong("id")?.let { viewModel.start(it) }
 
-//        viewModel.getDetailsQuiz(quizId)
+        viewModel.getDetailsQuiz(quizId)
     }
 
-        private fun setupObservers() {
-            viewModel.character.observe(viewLifecycleOwner, Observer {
-                when (it.status) {
-                    Resource.Status.SUCCESS -> {
-                        binding.progressBar.visibility = View.GONE
-                    }
+    private fun initView() {
 
-                    Resource.Status.ERROR ->
-                        Toast.makeText(activity, it.message, Toast.LENGTH_SHORT).show()
 
-                    Resource.Status.LOADING -> {
-                        binding.progressBar.visibility = View.VISIBLE
-                    }
-                }
-            })
-        }
-
-        private fun initView() {
         viewModel.observeResults.observe(viewLifecycleOwner, Observer{
-//            viewModel.updateData(quizId, it)
+            viewModel.updateData(quizId, it)
             binding.progressBar.max = it.questions.size
             binding.progressBar.progress = currentIndex
 
@@ -134,7 +111,7 @@ class DetailsFragment : Fragment() {
                     correctPoints += answer.isCorrect
                     binding.aQuestionTextViewQuestionNumber2.text = (correctPoints).toString()
                 }
-//                viewModel.refreshQuestion()
+                viewModel.refreshQuestion()
             }
     }
 
