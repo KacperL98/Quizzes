@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_grapq"
+    app:startDestination="@id/nav_comics">
+
+    <fragment
+        android:id="@+id/nav_comics"
+        android:name="com.example.quizzes.fragment.RecyclerListFragment"
+        android:label="Marvel Comics"
+        tools:layout="@layout/fragment_recycler_list">
+        <action
+            android:id="@+id/action_nav_comics_to_detailsFragment"
+            app:destination="@id/detailsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/detailsFragment"
+        android:name="com.example.quizzes.fragment2.DetailsFragment"
+        android:label="fragment_details"
+        tools:layout="@layout/fragment_details" >
+        <action
+            android:id="@+id/action_detailsFragment_to_thirdFragment"
+            app:destination="@id/thirdFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/thirdFragment"
+        android:name="com.example.quizzes.fragment2.ThirdFragment"
+        android:label="fragment_third"
+        tools:layout="@layout/fragment_third" >
+        <action
+            android:id="@+id/action_thirdFragment_to_nav_comics"
+            app:destination="@id/nav_comics" />
+    </fragment>
+
+
+</navigation>
