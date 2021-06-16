@@ -12,7 +12,7 @@ interface QuizDao {
     @Insert(onConflict = OnConflictStrategy.REPLACE)
     suspend fun insert(listItemEntities: QuizEntity)
 
-    @Query("SELECT * FROM ListItemEntity")
+    @Query("SELECT * FROM QuizEntity")
     fun getAll(): Flow<QuizEntity>
 
 }

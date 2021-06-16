@@ -5,7 +5,7 @@ import androidx.room.Entity
 import androidx.room.PrimaryKey
 import com.example.quizzes.model.roommodel.RoomListData
 
-@Entity(tableName = "ListItemEntity")
+@Entity(tableName = "QuizEntity")
 data class QuizEntity(
     @NonNull
     @PrimaryKey(autoGenerate = true) val id: Int?,
