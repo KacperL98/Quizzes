@@ -33,4 +33,20 @@ Gdy użytkownik będzie offline to wyświetli się poniższy napis, natomiast gd
 
   ![eeee](https://user-images.githubusercontent.com/75754448/122290751-59de1200-cef4-11eb-8f41-811415321217.png)
 
-### 1. Pobieranie obrazków z listy
+### 1. Pobieranie obrazków
+
+```Kotlin
+            val url =
+                item.mainPhoto.url
+                    .replace(
+                        "https://filerepo.grupawp.pl/",
+                        "http://i.wpimg.pl/" +
+                                "${item.mainPhoto.width}x${item.mainPhoto.height}/filerepo.grupawp.pl/"
+                    )
+            Glide.with(root.context)
+                .load(url)
+                .centerCrop()
+                .transition(DrawableTransitionOptions.withCrossFade())
+                .error(R.drawable.quiz_list)
+                .into(imgTitleQuiz)
+```
