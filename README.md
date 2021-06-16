@@ -53,6 +53,21 @@ Gdy użytkownik będzie offline to wyświetli się poniższy napis, natomiast gd
 ### 2. Przyciski
 
 Zauważyłem, że Api zwraca różne ilości przycisków. Można ustawić to na sztywno i dodać do każdego przycisku odpowiednią zależność (tak też zrobiłem napoczątku).
-Ostatecznie dodałem osobny ViewHolder i Adapter. Jeżeli skończą się pytania to użytkownik zostanie przeniesiony do fragmentu ScoreQuizFragment.
-Według mnie wygląda to znacznie lepiej, niż przy pierwszym pomyśle. Przede wszystkim jest mniej kodu i jest czytelniejszy :hand:
+Ostatecznie dodałem osobny ViewHolder i Adapter.Według mnie wygląda to znacznie lepiej, niż przy pierwszym pomyśle. Przede wszystkim jest mniej kodu i jest czytelniejszy :hand:
+
+Jeżeli skończą się pytania to użytkownik zostanie przeniesiony do fragmentu ScoreQuizFragment
+
+```Kotlin
+    private val adapter: AnswerAdapter by lazy {
+        AnswerAdapter { answer ->
+            addPoint(answer)
+            if (currentIndex != amountQuestions - 1) {
+                currentIndex++
+            } else {
+                openScoreFragment()
+            }
+            viewModel.refreshQuestion()
+        }
+    }
+```
 
