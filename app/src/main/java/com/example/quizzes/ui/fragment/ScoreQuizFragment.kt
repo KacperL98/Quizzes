@@ -55,7 +55,6 @@ class ScoreQuizFragment : Fragment() {
             )
         }
     }
-
     override fun onDestroyView() {
         super.onDestroyView()
         _binding = null

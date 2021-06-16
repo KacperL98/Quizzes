@@ -124,4 +124,8 @@ class DetailsQuizFragment : Fragment() {
         binding.groupData.gone()
         binding.imageViewLottie.show()
     }
+    override fun onDestroyView() {
+        super.onDestroyView()
+        _binding = null
+    }
 }
