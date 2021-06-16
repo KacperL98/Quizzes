@@ -24,6 +24,7 @@ class QuizDetailsViewModel @Inject constructor(
     fun refreshQuestion() {
         resultsMutable.value = resultsMutable.value
     }
+
     private suspend fun getQuizzesDB() = listItemDao.getAll().first()
 
     private fun addQuestionQuizToDB(idQuiz: Long, root: QuizDetailsDataModel?) {
