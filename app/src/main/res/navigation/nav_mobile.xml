@@ -9,7 +9,7 @@
         android:id="@+id/listQuizFragment"
         android:name="com.example.quizzes.ui.fragment.ListQuizFragment"
         android:label="ListQuizFragment"
-        tools:layout="@layout/fragment_score_quiz">
+        tools:layout="@layout/fragment_list_quiz">
         <action
             android:id="@+id/action_listQuizFragment_to_detailsQuizFragment"
             app:destination="@id/detailsQuizFragment" />

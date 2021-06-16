@@ -6,4 +6,5 @@
     <string name="solve_again">Rozwiąż jeszcze raz</string>
     <string name="go_to_the_list_of_quizzes">Przejdź do listy Quizzów</string>
     <string name="amount_question">Ilość pytań:</string>
+    <string name="no_connection_internet">Jesteś aktualnie offline, uruchom ponownie apliakcje i włącz internet!</string>
 </resources>
