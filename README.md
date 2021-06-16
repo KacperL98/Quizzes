@@ -28,6 +28,5 @@ Stworzyłem aplikację mobilną z Quizami. Wykorzystałem biblioteki:
 
 Gdy użytkownik będzie offline to wyśietli się poniższy napis, natomiast gdy bęzie online to wróci do normalnego stanu i dane załadują się automatycznie.
 
-<img src="![fff](https://user-images.githubusercontent.com/75754448/122289017-88f38400-cef2-11eb-8ee2-2a63fa149b62.jpg)
-width="80%" height="80%"/>
+![eeee](https://user-images.githubusercontent.com/75754448/122290275-dc1a0680-cef3-11eb-8c47-c2b0a3b7bd41.png)
 
