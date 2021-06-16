@@ -53,7 +53,7 @@ Jeżeli użytkownik przed pierwszym uruchomieniem wyłączy Internet to wyświet
 
 ### 2. Przyciski
 
-Zauważyłem, że Api zwraca różne ilości przycisków. Można ustawić to na sztywno i dodać do każdego przycisku odpowiednią zależność (tak też zrobiłem napoczątku).
+Zauważyłem, że Api zwraca różne ilości przycisków. Można ustawić to na sztywno i dodać do każdego przycisku odpowiednią zależność (tak też zrobiłem na początku).
 Ostatecznie dodałem osobny ViewHolder i Adapter.Według mnie wygląda to znacznie lepiej, niż przy pierwszym pomyśle. Przede wszystkim jest mniej kodu i jest czytelniejszy :hand:
 
 Jeżeli skończą się pytania to użytkownik zostanie przeniesiony do fragmentu ScoreQuizFragment
