@@ -28,13 +28,10 @@ Stworzyłem aplikację mobilną z Quizami. Wykorzystałem:
 
 
 Gdy użytkownik będzie offline to wyświetli się poniższy napis, natomiast gdy będzie online to wróci do normalnego stanu i dane załadują się automatycznie.
-
-
-  ![eeee](https://user-images.githubusercontent.com/75754448/122290751-59de1200-cef4-11eb-8f41-811415321217.png)
-
 Jeżeli użytkownik przed pierwszym uruchomieniem wyłączy Internet to wyświetli mu się poniższy komunikat. W takim wypadku należy ponownie otworzyć aplikacje  :wink:
 
-![dddd](https://user-images.githubusercontent.com/75754448/122305015-7125fb00-cf06-11eb-901d-310e91507198.png)
+![12](https://user-images.githubusercontent.com/75754448/122305167-b8ac8700-cf06-11eb-8292-15cffdd56d44.png)
+
 
 ### 1. Pobieranie obrazków
 
