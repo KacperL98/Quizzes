@@ -1,13 +1,9 @@
 <resources>
     <string name="app_name">Quizzes</string>
-    <string name="search_hint">Search…</string>
-    <string name="empty_list">No items to show…</string>
-    <string name="empty_filter_list">No items to show for filter: %s</string>
     <string name="offline_mode">You\'re in offline mode</string>
-    <string name="cant_download_dialog_title">Can\'t download necessary data!</string>
-    <string name="cant_download_dialog_message">Can\'t download data because of error, Check your internet connection.</string>
-    <string name="cant_download_dialog_btn_positive">Try again</string>
-    <string name="cant_download_dialog_btn_negative">Close</string>
-    <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="result"> %s%%</string>
+    <string name="your_result">Twój wynik</string>
+    <string name="solve_again">Rozwiąż jeszcze raz</string>
+    <string name="go_to_the_list_of_quizzes">Przejdź do listy Quizzów</string>
+    <string name="amount_question">Ilość pytań:</string>
 </resources>

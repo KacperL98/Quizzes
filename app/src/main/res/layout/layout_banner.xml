@@ -5,5 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:text="@string/offline_mode"
+    android:textColor="@color/white"
     android:visibility="gone"
+    android:textAlignment="center"
     tools:visibility="visible" />

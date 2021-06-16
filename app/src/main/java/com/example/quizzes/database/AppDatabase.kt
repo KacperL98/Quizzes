@@ -5,12 +5,11 @@ import androidx.room.Database
 import androidx.room.Room
 import androidx.room.RoomDatabase
 import androidx.room.TypeConverters
-import com.example.quizzes.TypeConverterData
 
-@Database(entities = [ListItemEntity::class], version = 1, exportSchema = false)
+@Database(entities = [QuizEntity::class], version = 1, exportSchema = false)
 @TypeConverters(TypeConverterData::class)
 abstract class AppDatabase : RoomDatabase() {
-    abstract fun listItemDao(): ListItemDao
+    abstract fun listItemDao(): QuizDao
 
     companion object {
         @Volatile

@@ -2,36 +2,43 @@
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/nav_grapq"
-    app:startDestination="@id/nav_comics">
+    android:id="@+id/nav_mobile"
+    app:startDestination="@id/listQuizFragment">
 
     <fragment
-        android:id="@+id/nav_comics"
-        android:name="com.example.quizzes.fragment.RecyclerListFragment"
-        android:label="Marvel Comics"
-        tools:layout="@layout/fragment_recycler_list">
+        android:id="@+id/listQuizFragment"
+        android:name="com.example.quizzes.ui.fragment.ListQuizFragment"
+        android:label="ListQuizFragment"
+        tools:layout="@layout/fragment_score_quiz">
         <action
-            android:id="@+id/action_nav_comics_to_detailsFragment"
-            app:destination="@id/detailsFragment" />
+            android:id="@+id/action_listQuizFragment_to_detailsQuizFragment"
+            app:destination="@id/detailsQuizFragment" />
     </fragment>
     <fragment
-        android:id="@+id/detailsFragment"
-        android:name="com.example.quizzes.fragment2.DetailsFragment"
-        android:label="fragment_details"
-        tools:layout="@layout/fragment_details" >
+        android:id="@+id/detailsQuizFragment"
+        android:name="com.example.quizzes.ui.fragment.DetailsQuizFragment"
+        android:label="DetailsQuizFragment"
+        tools:layout="@layout/fragment_details_quiz">
         <action
-            android:id="@+id/action_detailsFragment_to_thirdFragment"
-            app:destination="@id/thirdFragment" />
+            android:id="@+id/action_detailsQuizFragment_to_scoreQuizFragment"
+            app:destination="@id/scoreQuizFragment" />
+        <action
+            android:id="@+id/action_detailsQuizFragment_to_listQuizFragment"
+            app:destination="@id/listQuizFragment" />
     </fragment>
     <fragment
-        android:id="@+id/thirdFragment"
-        android:name="com.example.quizzes.fragment2.ThirdFragment"
-        android:label="fragment_third"
-        tools:layout="@layout/fragment_third" >
+        android:id="@+id/scoreQuizFragment"
+        android:name="com.example.quizzes.ui.fragment.ScoreQuizFragment"
+        android:label="fragment_score_quiz"
+        tools:layout="@layout/fragment_score_quiz" >
         <action
-            android:id="@+id/action_thirdFragment_to_nav_comics"
-            app:destination="@id/nav_comics" />
+            android:id="@+id/action_scoreQuizFragment_to_listQuizFragment"
+            app:destination="@id/listQuizFragment" />
+        <action
+            android:id="@+id/action_scoreQuizFragment_to_detailsQuizFragment"
+            app:destination="@id/detailsQuizFragment" />
+        <action
+            android:id="@+id/action_scoreQuizFragment_to_listQuizFragment2"
+            app:destination="@id/listQuizFragment" />
     </fragment>
-
-
 </navigation>

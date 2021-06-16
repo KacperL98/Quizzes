@@ -6,8 +6,8 @@
     android:animateLayoutChanges="true"
     android:fitsSystemWindows="true">
 
-
     <include
         android:id="@+id/banner_offline_mode"
         layout="@layout/layout_banner" />
+
 </com.google.android.material.appbar.AppBarLayout>

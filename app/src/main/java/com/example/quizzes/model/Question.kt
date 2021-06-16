@@ -4,9 +4,9 @@ import android.os.Parcelable
 import kotlinx.parcelize.Parcelize
 
 @Parcelize
-data class Image(
-    val height: String,
-    val source: String,
-    val url: String,
-    val width: String
+data class Question(
+    val answer: String,
+    val answers: List<Answer>,
+    val text: String,
+    val image: Image
 ) : Parcelable

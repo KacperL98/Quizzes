@@ -31,10 +31,8 @@ class NetworkRepository @Inject constructor(@ApplicationContext val context: Con
                     ConnectivityManager.TYPE_ETHERNET -> true
                     else -> false
                 }
-
             }
         }
-
         return result
     }
 }

@@ -1,13 +1,11 @@
 package com.example.quizzes.repository
 
-import com.example.quizzes.api.QuizzesService
-import com.example.quizzes.database.BaseDataSource
+import com.example.quizzes.api.QuizApi
 import javax.inject.Inject
 
 class QuizzesRepository @Inject constructor(
-    private val quizzesService: QuizzesService
+    private val quizzesService: QuizApi
 )  {
-
-    suspend fun getAllQuizzes() =  quizzesService.getAllQuizzes()
-    suspend fun getDetailsQuiz(id_quizu: Long) =   quizzesService.getDetailsQuiz(id_quizu)
+    suspend fun getAllQuizzesApi() =  quizzesService.getAllListQuiz()
+    suspend fun getDetailsQuiz(idQuiz: Long) =   quizzesService.getDetailsQuiz(idQuiz)
 }
