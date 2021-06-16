@@ -32,7 +32,10 @@ Gdy użytkownik będzie offline to wyświetli się poniższy napis, natomiast gd
 
   ![eeee](https://user-images.githubusercontent.com/75754448/122290751-59de1200-cef4-11eb-8f41-811415321217.png)
 
-Jeżeli użytkownik 
+Jeżeli użytkownik przed pierwszym uruchomieniem wyłączy Internet to wyświetli mu się poniższy komunikat. W takim wypadku należy ponownie otworzyć aplikacje  :wink:
+
+![dddd](https://user-images.githubusercontent.com/75754448/122305015-7125fb00-cf06-11eb-901d-310e91507198.png)
+
 ### 1. Pobieranie obrazków
 
 ```Kotlin
