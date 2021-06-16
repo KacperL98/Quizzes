@@ -22,7 +22,10 @@ Stworzyłem aplikację mobilną z Quizami. Wykorzystałem biblioteki:
 
 :white_check_mark:Lottie
 
-Widoki apliakcji
+### Widoki apliakcji
 
 ![img](https://user-images.githubusercontent.com/75754448/122287264-09b18080-cef1-11eb-855a-a7af239e2af0.png)
 
+Gdy użytkownik będzie offline to wyśietli się poniższy napis, natomiast gdy bęzie online to wróci do normalnego stanu i dane załadują się automatycznie.
+
+![image](https://user-images.githubusercontent.com/75754448/122287799-a411c400-cef1-11eb-88f6-dd6eb8e9ee94.png)
