@@ -2,7 +2,7 @@
 
 Cześć! 👋
 
-Stworzyłem aplikację mobilną z Quizami. Wykorzystałem biblioteki:
+Stworzyłem aplikację mobilną z Quizami. Wykorzystałem:
 
 :white_check_mark:API
 
