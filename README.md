@@ -32,6 +32,7 @@ Gdy użytkownik będzie offline to wyświetli się poniższy napis, natomiast gd
 
   ![eeee](https://user-images.githubusercontent.com/75754448/122290751-59de1200-cef4-11eb-8f41-811415321217.png)
 
+Jeżeli użytkownik 
 ### 1. Pobieranie obrazków
 
 ```Kotlin
