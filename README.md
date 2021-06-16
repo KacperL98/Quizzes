@@ -33,6 +33,8 @@ Jeżeli użytkownik przed pierwszym uruchomieniem wyłączy Internet to wyświet
 ![12](https://user-images.githubusercontent.com/75754448/122305167-b8ac8700-cf06-11eb-8292-15cffdd56d44.png)
 
 
+### Krótki opis losowo wybranych części kodu
+
 ### 1. Pobieranie obrazków
 
 ```Kotlin
