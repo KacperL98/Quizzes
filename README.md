@@ -1,6 +1,6 @@
 ### Quizzes
 
-Cześć! 👋
+### Cześć! 👋
 
 Stworzyłem aplikację mobilną z Quizami. Wykorzystałem:
 
