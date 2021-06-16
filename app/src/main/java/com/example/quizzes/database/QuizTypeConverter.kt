@@ -5,7 +5,7 @@ import com.example.quizzes.model.roommodel.RoomListData
 import com.google.gson.Gson
 import com.google.gson.reflect.TypeToken
 
-class TypeConverterData {
+class QuizTypeConverter {
     @TypeConverter
     fun toQuizzes(value: String): RoomListData {
         val notesType = object : TypeToken<RoomListData>() {}.type

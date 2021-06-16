@@ -7,7 +7,7 @@ import androidx.room.RoomDatabase
 import androidx.room.TypeConverters
 
 @Database(entities = [QuizEntity::class], version = 1, exportSchema = false)
-@TypeConverters(TypeConverterData::class)
+@TypeConverters(QuizTypeConverter::class)
 abstract class AppDatabase : RoomDatabase() {
     abstract fun listItemDao(): QuizDao
 

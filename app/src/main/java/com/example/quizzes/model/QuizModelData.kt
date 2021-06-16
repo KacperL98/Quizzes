@@ -6,6 +6,6 @@ import kotlinx.parcelize.Parcelize
 @Parcelize
 data class QuizModelData(
     val count: Int,
-    val items: List<ViewStatus>
+    val items: List<ItemQuizList>
 ) : Parcelable
 

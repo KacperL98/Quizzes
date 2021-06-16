@@ -25,6 +25,8 @@ class ScoreQuizFragment : Fragment() {
     private var _binding: FragmentScoreQuizBinding? = null
     private val binding get() = _binding!!
     private val result by lazy { arguments?.getInt("result") as Int }
+    private val quizId by lazy { arguments?.getLong(Const.RESULT_LIST) as Long }
+
 
     override fun onCreateView(
         inflater: LayoutInflater,
@@ -43,22 +45,19 @@ class ScoreQuizFragment : Fragment() {
 
     private fun onBackPressed() {
         binding.btnBackListQuiz.setOnClickListener {
-            findNavController().navigate(R.id.action_scoreQuizFragment_to_listQuizFragment)
+            findNavController().popBackStack()
+        }
+        binding.btnSolveAgain.setOnClickListener {
+            findNavController().navigate(
+                R.id.action_scoreQuizFragment_to_detailsQuizFragment, bundleOf(
+                    Const.RESULT_LIST to quizId
+                )
+            )
         }
     }
 
-    override fun onAttach(context: Context) {
-        super.onAttach(context)
-        val callback: OnBackPressedCallback =
-            object : OnBackPressedCallback(true)
-            {
-                override fun handleOnBackPressed() {
-                    findNavController().navigate(R.id.action_scoreQuizFragment_to_listQuizFragment)
-                }
-            }
-        requireActivity().onBackPressedDispatcher.addCallback(
-            this,
-            callback
-        )
+    override fun onDestroyView() {
+        super.onDestroyView()
+        _binding = null
     }
 }

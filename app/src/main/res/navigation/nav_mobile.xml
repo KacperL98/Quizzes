@@ -20,25 +20,26 @@
         android:label="DetailsQuizFragment"
         tools:layout="@layout/fragment_details_quiz">
         <action
-            android:id="@+id/action_detailsQuizFragment_to_scoreQuizFragment"
-            app:destination="@id/scoreQuizFragment" />
-        <action
             android:id="@+id/action_detailsQuizFragment_to_listQuizFragment"
             app:destination="@id/listQuizFragment" />
+        <action
+            android:id="@+id/action_detailsQuizFragment_to_scoreQuizFragment"
+            app:destination="@id/scoreQuizFragment"
+            app:popUpTo="@id/detailsQuizFragment"
+            app:popUpToInclusive="true" />
     </fragment>
     <fragment
         android:id="@+id/scoreQuizFragment"
         android:name="com.example.quizzes.ui.fragment.ScoreQuizFragment"
         android:label="fragment_score_quiz"
-        tools:layout="@layout/fragment_score_quiz" >
+        tools:layout="@layout/fragment_score_quiz">
         <action
             android:id="@+id/action_scoreQuizFragment_to_listQuizFragment"
             app:destination="@id/listQuizFragment" />
         <action
             android:id="@+id/action_scoreQuizFragment_to_detailsQuizFragment"
-            app:destination="@id/detailsQuizFragment" />
-        <action
-            android:id="@+id/action_scoreQuizFragment_to_listQuizFragment2"
-            app:destination="@id/listQuizFragment" />
+            app:destination="@id/detailsQuizFragment"
+            app:popUpTo="@id/scoreQuizFragment"
+            app:popUpToInclusive="true" />
     </fragment>
 </navigation>

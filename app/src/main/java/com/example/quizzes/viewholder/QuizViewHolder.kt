@@ -5,9 +5,7 @@ import com.bumptech.glide.Glide
 import com.bumptech.glide.load.resource.drawable.DrawableTransitionOptions
 import com.example.quizzes.R
 import com.example.quizzes.databinding.ItemQuizBinding
-import com.example.quizzes.model.ViewStatus
 import com.example.quizzes.model.roommodel.RoomModelData
-import timber.log.Timber
 
 class QuizViewHolder(private val binding: ItemQuizBinding) :
     RecyclerView.ViewHolder(binding.root) {

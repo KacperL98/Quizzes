@@ -5,7 +5,6 @@ import android.view.ViewGroup
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.ListAdapter
 import com.example.quizzes.databinding.ItemQuizBinding
-import com.example.quizzes.model.ViewStatus
 import com.example.quizzes.model.roommodel.RoomModelData
 import com.example.quizzes.viewholder.QuizViewHolder
 

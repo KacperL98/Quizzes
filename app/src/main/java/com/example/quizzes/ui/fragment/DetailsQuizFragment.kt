@@ -15,6 +15,7 @@ import com.bumptech.glide.Glide
 import com.bumptech.glide.load.resource.drawable.DrawableTransitionOptions
 import com.example.quizzes.R
 import com.example.quizzes.adapter.AnswerAdapter
+import com.example.quizzes.basic.Const
 import com.example.quizzes.basic.Const.Companion.RESULT_LIST
 import com.example.quizzes.databinding.FragmentDetailsQuizBinding
 import com.example.quizzes.extension.gone
@@ -114,7 +115,8 @@ class DetailsQuizFragment : Fragment() {
         val result = (correctPoints * 100) / amountQuestions
         findNavController().navigate(
             R.id.action_detailsQuizFragment_to_scoreQuizFragment,
-            bundleOf("result" to result)
+            bundleOf("result" to result,
+            RESULT_LIST to quizId)
         )
     }
 

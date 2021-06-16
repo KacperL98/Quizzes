@@ -4,7 +4,7 @@ import android.os.Parcelable
 import kotlinx.parcelize.Parcelize
 
 @Parcelize
-data class ViewStatus(
+data class ItemQuizList(
     val id: Long,
     val mainPhoto: MainPhoto,
     val questions: Int = 0,

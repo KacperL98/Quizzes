@@ -29,6 +29,7 @@ class ListQuizViewModel @Inject constructor(
         viewModelScope.launch(Dispatchers.IO) {
             try {
                 if (networkRepository.isInternetAvailable()) {
+                    viewsStatusMutable.postValue(ViewStatus.Loading)
                     val response = useCases.getAllQuizzesApi()
                     if (response.isSuccessful) {
                         val data = response.body()
