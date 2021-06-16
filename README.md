@@ -80,7 +80,7 @@ Procent dodałem w res-values-strings
     <string name="result"> %s%%</string>
 ```
 
-Kiedy odpowiedź jest poprawna to zwraca mi z Api +1 pkt
+Kiedy odpowiedź jest poprawna to zwraca z Api +1 pkt
 
 ```Kotlin
        private fun addPoint(answer: Answer) {
