@@ -72,3 +72,32 @@ Jeżeli skończą się pytania to użytkownik zostanie przeniesiony do fragmentu
     }
 ```
 
+### 3. Wyświetlanie wyniku w ScoreQuizFragment
+
+Procent dodałem w res-values-strings
+
+```Kotlin
+    <string name="result"> %s%%</string>
+```
+
+Kiedy odpowiedź jest poprawna to zwraca mi z Api +1 pkt
+
+```Kotlin
+       private fun addPoint(answer: Answer) {
+        if (answer.isCorrect != 0) {
+            correctPoints += answer.isCorrect
+        }
+    }
+```
+Następnie przekazuję wartość w nawigacji
+
+```Kotlin
+    private fun openScoreFragment() {
+        val result = (correctPoints * 100) / amountQuestions
+        findNavController().navigate(
+            R.id.action_detailsQuizFragment_to_scoreQuizFragment,
+            bundleOf("result" to result,
+            RESULT_LIST to quizId)
+        )
+    }
+```
